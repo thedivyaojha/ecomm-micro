@@ -42,6 +42,18 @@ public class ProductService {
                 .collect(Collectors.toList());
     }
 
+    public ProductResponse updateProduct(Long id, ProductRequest productRequest) {
+        Product existingProduct = productRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Product not found with id: " + id));
+        existingProduct.setProductName(productRequest.name());
+        existingProduct.setProductDescription(productRequest.description());
+        existingProduct.setProductPrice(productRequest.price());
+        existingProduct.setStock(productRequest.stock());
+        existingProduct.setProductImageUrl(productRequest.imageUrl());
+        existingProduct.setProductCategory(productRequest.category());
+        Product updatedProduct = productRepository.save(existingProduct);
+        return mapToProductResponse(updatedProduct);
+    }
 
     private ProductResponse mapToProductResponse(Product newProduct) {
         return new ProductResponse(
@@ -53,4 +65,17 @@ public class ProductService {
         );
     }
 
+
+    public void deleteProduct(Long id) {
+        Product productTobeDeleted = productRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Product not found with id: " + id));
+        productRepository.delete(productTobeDeleted);
+
+    }
+
+    public ProductResponse getProductByName(String name) {
+        Product product = productRepository.findByProductName(name)
+                .orElseThrow(() -> new RuntimeException("Product not found with name: " + name));
+        return mapToProductResponse(product);
+    }
 }
