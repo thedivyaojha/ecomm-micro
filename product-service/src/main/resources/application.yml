@@ -4,15 +4,27 @@ spring:
 
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/productdb
-    username: postgres
-    password: divyaojha
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
   jpa:
     database: POSTGRESQL
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
     hibernate:
       ddl-auto: update
+
+logging:
+  level:
+    root: INFO
+  file:
+   name: logs/app.log
+  logback:
+    rollingpolicy:
+      max-file-size: 5MB
+      max-history: 7
+
+
 
 server:
   port: 8081
