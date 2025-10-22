@@ -10,7 +10,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
 
-@Entity(name = "user-table")
+@Entity(name = "usersDb")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -33,7 +33,7 @@ public class User {
     private String lastName;
 
     @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "address_id" , referencedColumnName = "id")
+    @JoinColumn(name = "addressId" , referencedColumnName = "id")
     private Address address;
 
     @CreationTimestamp

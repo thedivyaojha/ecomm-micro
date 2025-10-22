@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -20,24 +21,25 @@ public class UserService {
 
     public UserResponse createUser(UserRequest user) {
         User newUser = new User();
-        mapToUser(newUser, user);
+        updateUserFromRequest(newUser, user);
         userRepository.save(newUser);
         return mapToUserResponse(newUser);
     }
 
-    private void mapToUser(User newUser, UserRequest user) {
-        Address userAddress = new Address();
-        newUser.setEmail(user.email());
-        newUser.setUsername(user.username());
-        newUser.setPassword(user.password());
-        newUser.setFirstName(user.firstName());
-        newUser.setLastName(user.lastName());
-        if (user.address() != null) {
-            userAddress.setCity(user.address().city());
-            userAddress.setCountry(user.address().country());
-            userAddress.setState(user.address().state());
-            userAddress.setPinCode(user.address().pinCode());
-            newUser.setAddress(userAddress);
+    private void updateUserFromRequest(User newUser, UserRequest userRequest) {
+        newUser.setFirstName(userRequest.firstName());
+        newUser.setLastName(userRequest.lastName());
+        newUser.setEmail(userRequest.email());
+        if (userRequest.address() != null) {
+            Address address = new Address();
+            address.setStreetName(userRequest.address().streetName());
+            address.setCity(userRequest.address().city());
+            address.setState(userRequest.address().state());
+            address.setPinCode(userRequest.address().pinCode());
+            address.setCountry(userRequest.address().country());
+            newUser.setAddress(address);
+            newUser.setUsername(userRequest.username());
+            newUser.setPassword(userRequest.password());
         }
     }
 
@@ -51,5 +53,25 @@ public class UserService {
         return new UserResponse(user.getUsername(), user.getEmail(), user.getFirstName(), user.getLastName());
     }
 
+    public List<User> findAllUsers(){
+        List<User> allUsers =  userRepository.findAll();
 
+        return allUsers;
+    }
+
+
+    public Boolean deleteUser(Long id) {
+        if (userRepository.existsById(id)) {
+            userRepository.deleteById(id);
+            return true;
+        }
+        return false;
+    }
+
+    public Boolean validateUser(Long id) {
+        if(userRepository.existsById(id)){
+            return true;
+        }
+        return false;
+    }
 }
