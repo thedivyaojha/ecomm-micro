@@ -55,6 +55,15 @@ public class UserController {
         return ResponseEntity.notFound().build();
     }
 
+    @PutMapping("/{id}")
+    public ResponseEntity<UserResponse> updateUser(@PathVariable Long id, @RequestBody UserRequest userRequest) {
+        UserResponse userResponse = userService.updateUser(id, userRequest);
+        if (userResponse != null) {
+            return ResponseEntity.ok(userResponse);
+        }
+        return ResponseEntity.notFound().build();
+    }
+
 
     @GetMapping
     public ResponseEntity<List<User>> findAllUsers() {

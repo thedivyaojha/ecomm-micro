@@ -8,6 +8,8 @@ import com.docp.user_service.model.User;
 import com.docp.user_service.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 
 
 import java.util.List;
@@ -19,17 +21,29 @@ public class UserService {
 
     private final UserRepository userRepository;
 
-    public UserResponse createUser(UserRequest user) {
+    public UserResponse createUser(UserRequest userRequest) {
         User newUser = new User();
-        updateUserFromRequest(newUser, user);
-        userRepository.save(newUser);
-        return mapToUserResponse(newUser);
+        mapUserFromRequest(newUser, userRequest);
+        User savedUser =userRepository.save(newUser);
+        return mapToUserResponse(savedUser);
+    }
+    public UserResponse updateUser(@PathVariable Long id, @RequestBody UserRequest userRequest) {
+        Optional<User> optionalUser = userRepository.findById(id);
+        if (optionalUser.isEmpty()) {
+            return null;
+        }
+        User existingUser = optionalUser.get();
+        mapUserFromRequest(existingUser,userRequest);
+    User UpdatedUser = userRepository.save(existingUser);
+        return mapToUserResponse(UpdatedUser);
     }
 
-    private void updateUserFromRequest(User newUser, UserRequest userRequest) {
-        newUser.setFirstName(userRequest.firstName());
-        newUser.setLastName(userRequest.lastName());
-        newUser.setEmail(userRequest.email());
+    public UserResponse mapUserFromRequest(User user, UserRequest userRequest) {
+        user.setFirstName(userRequest.firstName());
+        user.setLastName(userRequest.lastName());
+        user.setEmail(userRequest.email());
+        user.setUsername(userRequest.username());
+        user.setPassword(userRequest.password());
         if (userRequest.address() != null) {
             Address address = new Address();
             address.setStreetName(userRequest.address().streetName());
@@ -37,10 +51,12 @@ public class UserService {
             address.setState(userRequest.address().state());
             address.setPinCode(userRequest.address().pinCode());
             address.setCountry(userRequest.address().country());
-            newUser.setAddress(address);
-            newUser.setUsername(userRequest.username());
-            newUser.setPassword(userRequest.password());
+            user.setAddress(address);
+
         }
+
+
+        return null;
     }
 
 
