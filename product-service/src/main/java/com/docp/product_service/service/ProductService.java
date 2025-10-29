@@ -5,6 +5,7 @@ import com.docp.product_service.dto.ProductResponse;
 import com.docp.product_service.model.Product;
 import com.docp.product_service.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class ProductService {
 
     private final ProductRepository productRepository;
@@ -31,6 +33,7 @@ public class ProductService {
 
 
     public ProductResponse getProductById(Long id) {
+        log.info("product validation request reveived for {} from cart service" , id);
         Product product = productRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Product not found with id: " + id));
         return mapToProductResponse(product);

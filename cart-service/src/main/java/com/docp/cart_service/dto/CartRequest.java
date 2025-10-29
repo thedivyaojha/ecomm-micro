@@ -5,8 +5,8 @@ import jakarta.persistence.Column;
 import java.math.BigDecimal;
 
 public record CartRequest(
-         String userId,
-         String productId,
+         Long userId,
+         Long productId,
          Integer productQuantity,
          BigDecimal totalAmount) {
 }

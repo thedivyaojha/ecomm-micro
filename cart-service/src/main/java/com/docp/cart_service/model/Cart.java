@@ -17,11 +17,11 @@ public class Cart {
     @Column(nullable = false)
     private Long cartId;
     @Column(nullable = false)
-    private String userId;
+    private Long userId;
     @Column(nullable = false)
 
 
-    private String productId;
+    private Long productId;
     private  Integer productQuantity;
     private BigDecimal totalAmount;
 
