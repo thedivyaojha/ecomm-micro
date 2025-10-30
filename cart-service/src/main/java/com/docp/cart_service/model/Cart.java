@@ -1,7 +1,9 @@
 package com.docp.cart_service.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -11,6 +13,8 @@ import java.util.Date;
 
 @Data
 @Entity(name = "cart")
+@AllArgsConstructor
+@NoArgsConstructor
 public class Cart {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,5 +37,6 @@ public class Cart {
     private LocalDateTime updatedAt;
 
 
-
+    public Cart(Long userId, Long productId, Integer quantity, BigDecimal price) {
+    }
 }

@@ -7,6 +7,7 @@ import com.docp.user_service.model.Address;
 import com.docp.user_service.model.User;
 import com.docp.user_service.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,6 +18,7 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class UserService {
 
     private final UserRepository userRepository;
@@ -85,9 +87,12 @@ public class UserService {
     }
 
     public Boolean validateUser(Long id) {
+        log.info("validating user with {}", id);
         if(userRepository.existsById(id)){
+            log.info("user validation successful");
             return true;
         }
+        log.error("user validation failed");
         return false;
     }
 }

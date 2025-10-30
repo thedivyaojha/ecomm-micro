@@ -1,23 +1,23 @@
-2025-10-29T22:40:46.287+05:30  INFO 13420 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Starting ProductServiceApplication using Java 21.0.8 with PID 13420 (D:\OneDrive\Desktop\EcommProject\ecomm-micro\product-service\target\classes started by divya in D:\OneDrive\Desktop\EcommProject\ecomm-micro)
-2025-10-29T22:40:46.293+05:30  INFO 13420 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-10-29T22:40:46.402+05:30  INFO 13420 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-10-29T22:40:46.403+05:30  INFO 13420 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-10-29T22:40:47.593+05:30  INFO 13420 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-29T22:40:47.690+05:30  INFO 13420 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interface.
-2025-10-29T22:40:48.613+05:30  INFO 13420 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-10-29T22:40:48.639+05:30  INFO 13420 --- [product-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-10-29T22:40:48.639+05:30  INFO 13420 --- [product-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-29T22:40:48.729+05:30  INFO 13420 --- [product-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-10-29T22:40:48.731+05:30  INFO 13420 --- [product-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2326 ms
-2025-10-29T22:40:49.051+05:30  INFO 13420 --- [product-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-29T22:40:49.161+05:30  INFO 13420 --- [product-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-10-29T22:40:49.228+05:30  INFO 13420 --- [product-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-10-29T22:40:49.776+05:30  INFO 13420 --- [product-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-29T22:40:49.833+05:30  INFO 13420 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-10-29T22:40:50.143+05:30  INFO 13420 --- [product-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1804186
-2025-10-29T22:40:50.145+05:30  INFO 13420 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-10-29T22:40:50.222+05:30  WARN 13420 --- [product-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-10-29T22:40:50.257+05:30  INFO 13420 --- [product-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-10-30T22:47:21.143+05:30  INFO 16616 --- [user-service] [restartedMain] c.d.user_service.UserServiceApplication  : Starting UserServiceApplication using Java 21.0.8 with PID 16616 (D:\OneDrive\Desktop\EcommProject\ecomm-micro\user-service\target\classes started by divya in D:\OneDrive\Desktop\EcommProject\ecomm-micro)
+2025-10-30T22:47:21.153+05:30  INFO 16616 --- [user-service] [restartedMain] c.d.user_service.UserServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-10-30T22:47:21.249+05:30  INFO 16616 --- [user-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-30T22:47:21.249+05:30  INFO 16616 --- [user-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-30T22:47:22.749+05:30  INFO 16616 --- [user-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-30T22:47:22.878+05:30  INFO 16616 --- [user-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 1 JPA repository interface.
+2025-10-30T22:47:23.935+05:30  INFO 16616 --- [user-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-10-30T22:47:23.969+05:30  INFO 16616 --- [user-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-30T22:47:23.969+05:30  INFO 16616 --- [user-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-30T22:47:24.086+05:30  INFO 16616 --- [user-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-30T22:47:24.087+05:30  INFO 16616 --- [user-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2836 ms
+2025-10-30T22:47:24.535+05:30  INFO 16616 --- [user-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-30T22:47:24.661+05:30  INFO 16616 --- [user-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-30T22:47:24.756+05:30  INFO 16616 --- [user-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-30T22:47:25.465+05:30  INFO 16616 --- [user-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-30T22:47:25.537+05:30  INFO 16616 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-30T22:47:25.979+05:30  INFO 16616 --- [user-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d09be24
+2025-10-30T22:47:25.983+05:30  INFO 16616 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-30T22:47:26.114+05:30  WARN 16616 --- [user-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-30T22:47:26.154+05:30  INFO 16616 --- [user-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.6
@@ -25,13 +25,517 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-10-29T22:40:51.882+05:30  INFO 13420 --- [product-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-10-29T22:40:52.017+05:30  INFO 13420 --- [product-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-29T22:40:52.625+05:30  WARN 13420 --- [product-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-29T22:40:53.190+05:30  WARN 13420 --- [product-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2025-10-29T22:40:53.249+05:30  INFO 13420 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-10-29T22:40:53.264+05:30  INFO 13420 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Started ProductServiceApplication in 7.942 seconds (process running for 9.367)
-2025-10-29T22:41:36.010+05:30  INFO 13420 --- [product-service] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-29T22:41:36.011+05:30  INFO 13420 --- [product-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-10-29T22:41:36.014+05:30  INFO 13420 --- [product-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-10-29T22:41:36.096+05:30  INFO 13420 --- [product-service] [http-nio-8081-exec-1] c.d.p.service.ProductService             : product validation request reveived for 10 from cart service
+2025-10-30T22:47:28.393+05:30  INFO 16616 --- [user-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-30T22:47:28.873+05:30  INFO 16616 --- [user-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-30T22:47:29.384+05:30  WARN 16616 --- [user-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-30T22:47:29.900+05:30  INFO 18088 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Starting ProductServiceApplication using Java 21.0.8 with PID 18088 (D:\OneDrive\Desktop\EcommProject\ecomm-micro\product-service\target\classes started by divya in D:\OneDrive\Desktop\EcommProject\ecomm-micro)
+2025-10-30T22:47:29.904+05:30  INFO 18088 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-30T22:47:29.995+05:30  INFO 18088 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-30T22:47:29.997+05:30  INFO 18088 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-30T22:47:30.237+05:30  INFO 16616 --- [user-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-30T22:47:30.339+05:30  INFO 16616 --- [user-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-10-30T22:47:30.360+05:30  INFO 16616 --- [user-service] [restartedMain] c.d.user_service.UserServiceApplication  : Started UserServiceApplication in 10.57 seconds (process running for 12.244)
+2025-10-30T22:47:31.460+05:30  INFO 18088 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-30T22:47:31.588+05:30  INFO 18088 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 1 JPA repository interface.
+2025-10-30T22:47:32.591+05:30  INFO 18088 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-30T22:47:32.621+05:30  INFO 18088 --- [product-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-30T22:47:32.622+05:30  INFO 18088 --- [product-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-30T22:47:32.718+05:30  INFO 18088 --- [product-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-30T22:47:32.720+05:30  INFO 18088 --- [product-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2721 ms
+2025-10-30T22:47:33.053+05:30  INFO 18088 --- [product-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-30T22:47:33.167+05:30  INFO 18088 --- [product-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-30T22:47:33.229+05:30  INFO 18088 --- [product-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-30T22:47:33.748+05:30  INFO 18088 --- [product-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-30T22:47:33.809+05:30  INFO 18088 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-30T22:47:34.146+05:30  INFO 18088 --- [product-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2e268b10
+2025-10-30T22:47:34.149+05:30  INFO 18088 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-30T22:47:34.241+05:30  WARN 18088 --- [product-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-30T22:47:34.289+05:30  INFO 18088 --- [product-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-30T22:47:36.068+05:30  INFO 18088 --- [product-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-30T22:47:37.266+05:30  INFO 18088 --- [product-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-30T22:47:38.188+05:30  WARN 18088 --- [product-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-30T22:47:39.120+05:30  WARN 18088 --- [product-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-10-30T22:47:39.210+05:30  INFO 18088 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-10-30T22:47:39.227+05:30  INFO 18088 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Started ProductServiceApplication in 10.403 seconds (process running for 12.04)
+2025-10-30T23:02:25.607+05:30  INFO 18088 --- [product-service] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-30T23:02:25.625+05:30  INFO 18088 --- [product-service] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-30T23:02:25.700+05:30  INFO 18088 --- [product-service] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 71 ms
+2025-10-30T23:02:26.021+05:30  INFO 18088 --- [product-service] [http-nio-8081-exec-2] c.d.p.service.ProductService             : product validation request received for 11 from cart service
+2025-10-30T23:02:28.837+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-30T23:02:28.897+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-30T23:02:28.996+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 97 ms
+2025-10-30T23:02:29.672+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-1] c.d.user_service.services.UserService    : validating user with 1
+2025-10-30T23:02:31.207+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-1] c.d.user_service.services.UserService    : user validation successful
+2025-10-30T23:03:04.825+05:30  INFO 18088 --- [product-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-30T23:03:04.857+05:30  INFO 18088 --- [product-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-30T23:03:04.879+05:30  INFO 18088 --- [product-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-30T23:03:04.902+05:30  INFO 18088 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-30T23:03:04.939+05:30  INFO 18088 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-30T23:03:10.147+05:30  INFO 5816 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Starting ProductServiceApplication using Java 21.0.8 with PID 5816 (D:\OneDrive\Desktop\EcommProject\ecomm-micro\product-service\target\classes started by divya in D:\OneDrive\Desktop\EcommProject\ecomm-micro)
+2025-10-30T23:03:10.153+05:30  INFO 5816 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-30T23:03:10.240+05:30  INFO 5816 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-30T23:03:10.241+05:30  INFO 5816 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-30T23:03:11.553+05:30  INFO 5816 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-30T23:03:11.664+05:30  INFO 5816 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 1 JPA repository interface.
+2025-10-30T23:03:12.599+05:30  INFO 5816 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-30T23:03:12.629+05:30  INFO 5816 --- [product-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-30T23:03:12.630+05:30  INFO 5816 --- [product-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-30T23:03:12.737+05:30  INFO 5816 --- [product-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-30T23:03:12.737+05:30  INFO 5816 --- [product-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2495 ms
+2025-10-30T23:03:13.051+05:30  INFO 5816 --- [product-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-30T23:03:13.180+05:30  INFO 5816 --- [product-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-30T23:03:13.258+05:30  INFO 5816 --- [product-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-30T23:03:13.888+05:30  INFO 5816 --- [product-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-30T23:03:13.954+05:30  INFO 5816 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-30T23:03:14.325+05:30  INFO 5816 --- [product-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@78b454d4
+2025-10-30T23:03:14.328+05:30  INFO 5816 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-30T23:03:14.411+05:30  WARN 5816 --- [product-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-30T23:03:14.448+05:30  INFO 5816 --- [product-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-30T23:03:16.086+05:30  INFO 5816 --- [product-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-30T23:03:16.245+05:30  INFO 5816 --- [product-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-30T23:03:16.935+05:30  WARN 5816 --- [product-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-30T23:03:17.625+05:30  WARN 5816 --- [product-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-10-30T23:03:17.719+05:30  INFO 5816 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-10-30T23:03:17.733+05:30  INFO 5816 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Started ProductServiceApplication in 8.738 seconds (process running for 10.576)
+2025-10-30T23:08:23.193+05:30  INFO 5816 --- [product-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-30T23:08:23.249+05:30  INFO 5816 --- [product-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-30T23:08:23.281+05:30  INFO 5816 --- [product-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-30T23:08:23.315+05:30  INFO 5816 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-30T23:08:23.327+05:30  INFO 5816 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-30T23:08:31.830+05:30  INFO 5828 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Starting ProductServiceApplication using Java 21.0.8 with PID 5828 (D:\OneDrive\Desktop\EcommProject\ecomm-micro\product-service\target\classes started by divya in D:\OneDrive\Desktop\EcommProject\ecomm-micro)
+2025-10-30T23:08:31.835+05:30  INFO 5828 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-30T23:08:31.924+05:30  INFO 5828 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-30T23:08:31.924+05:30  INFO 5828 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-30T23:08:33.301+05:30  INFO 5828 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-30T23:08:33.409+05:30  INFO 5828 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interface.
+2025-10-30T23:08:34.303+05:30  INFO 5828 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-30T23:08:34.327+05:30  INFO 5828 --- [product-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-30T23:08:34.329+05:30  INFO 5828 --- [product-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-30T23:08:34.420+05:30  INFO 5828 --- [product-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-30T23:08:34.422+05:30  INFO 5828 --- [product-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2495 ms
+2025-10-30T23:08:34.750+05:30  INFO 5828 --- [product-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-30T23:08:34.883+05:30  INFO 5828 --- [product-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-30T23:08:34.957+05:30  INFO 5828 --- [product-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-30T23:08:35.502+05:30  INFO 5828 --- [product-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-30T23:08:35.560+05:30  INFO 5828 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-30T23:08:35.895+05:30  INFO 5828 --- [product-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4afeed7f
+2025-10-30T23:08:35.898+05:30  INFO 5828 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-30T23:08:35.982+05:30  WARN 5828 --- [product-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-30T23:08:36.019+05:30  INFO 5828 --- [product-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-30T23:08:37.788+05:30  INFO 5828 --- [product-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-30T23:08:37.927+05:30  INFO 5828 --- [product-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-30T23:08:38.586+05:30  WARN 5828 --- [product-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-30T23:08:39.199+05:30  WARN 5828 --- [product-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-10-30T23:08:39.267+05:30  INFO 5828 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-10-30T23:08:39.282+05:30  INFO 5828 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Started ProductServiceApplication in 8.496 seconds (process running for 10.032)
+2025-10-30T23:08:56.933+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-3] c.d.user_service.services.UserService    : validating user with 1
+2025-10-30T23:08:57.120+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-3] c.d.user_service.services.UserService    : user validation successful
+2025-10-30T23:08:57.311+05:30  INFO 5828 --- [product-service] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-30T23:08:57.312+05:30  INFO 5828 --- [product-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-30T23:08:57.314+05:30  INFO 5828 --- [product-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-30T23:08:57.410+05:30  INFO 5828 --- [product-service] [http-nio-8081-exec-1] c.d.p.controller.ProductController       : product validation request received for 11 from cart service
+2025-10-30T23:08:57.412+05:30  INFO 5828 --- [product-service] [http-nio-8081-exec-1] c.d.p.service.ProductService             : product validation request received for 11 from cart service
+2025-10-30T23:09:14.595+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-4] c.d.user_service.services.UserService    : validating user with 1
+2025-10-30T23:09:14.601+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-4] c.d.user_service.services.UserService    : user validation successful
+2025-10-30T23:09:14.612+05:30  INFO 5828 --- [product-service] [http-nio-8081-exec-2] c.d.p.controller.ProductController       : product validation request received for 11 from cart service
+2025-10-30T23:09:14.613+05:30  INFO 5828 --- [product-service] [http-nio-8081-exec-2] c.d.p.service.ProductService             : product validation request received for 11 from cart service
+2025-10-30T23:09:50.775+05:30  INFO 5828 --- [product-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-30T23:09:50.799+05:30  INFO 5828 --- [product-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-30T23:09:50.809+05:30  INFO 5828 --- [product-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-30T23:09:50.814+05:30  INFO 5828 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-30T23:09:50.820+05:30  INFO 5828 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-30T23:09:58.272+05:30  INFO 20240 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Starting ProductServiceApplication using Java 21.0.8 with PID 20240 (D:\OneDrive\Desktop\EcommProject\ecomm-micro\product-service\target\classes started by divya in D:\OneDrive\Desktop\EcommProject\ecomm-micro)
+2025-10-30T23:09:58.276+05:30  INFO 20240 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-30T23:09:58.362+05:30  INFO 20240 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-30T23:09:58.363+05:30  INFO 20240 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-30T23:09:59.562+05:30  INFO 20240 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-30T23:09:59.664+05:30  INFO 20240 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interface.
+2025-10-30T23:10:00.544+05:30  INFO 20240 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-30T23:10:00.572+05:30  INFO 20240 --- [product-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-30T23:10:00.572+05:30  INFO 20240 --- [product-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-30T23:10:00.665+05:30  INFO 20240 --- [product-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-30T23:10:00.666+05:30  INFO 20240 --- [product-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2302 ms
+2025-10-30T23:10:01.003+05:30  INFO 20240 --- [product-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-30T23:10:01.134+05:30  INFO 20240 --- [product-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-30T23:10:01.208+05:30  INFO 20240 --- [product-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-30T23:10:01.790+05:30  INFO 20240 --- [product-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-30T23:10:01.854+05:30  INFO 20240 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-30T23:10:02.274+05:30  INFO 20240 --- [product-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b87256f
+2025-10-30T23:10:02.278+05:30  INFO 20240 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-30T23:10:02.374+05:30  WARN 20240 --- [product-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-30T23:10:02.420+05:30  INFO 20240 --- [product-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-30T23:10:04.494+05:30  INFO 20240 --- [product-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-30T23:10:04.637+05:30  INFO 20240 --- [product-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-30T23:10:05.395+05:30  WARN 20240 --- [product-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-30T23:10:06.161+05:30  WARN 20240 --- [product-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-10-30T23:10:06.240+05:30  INFO 20240 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-10-30T23:10:06.256+05:30  INFO 20240 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Started ProductServiceApplication in 8.894 seconds (process running for 10.321)
+2025-10-30T23:10:13.217+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-6] c.d.user_service.services.UserService    : validating user with 1
+2025-10-30T23:10:13.221+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-6] c.d.user_service.services.UserService    : user validation successful
+2025-10-30T23:10:13.358+05:30  INFO 20240 --- [product-service] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-30T23:10:13.359+05:30  INFO 20240 --- [product-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-30T23:10:13.361+05:30  INFO 20240 --- [product-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-30T23:10:13.447+05:30  INFO 20240 --- [product-service] [http-nio-8081-exec-1] c.d.p.service.ProductService             : product validation request received for 11 from cart service
+2025-10-30T23:10:57.570+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-8] c.d.user_service.services.UserService    : validating user with 2
+2025-10-30T23:10:57.574+05:30 ERROR 16616 --- [user-service] [http-nio-8082-exec-8] c.d.user_service.services.UserService    : user validation failed
+2025-10-30T23:11:41.200+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-10] c.d.user_service.services.UserService    : validating user with 2
+2025-10-30T23:11:41.207+05:30 ERROR 16616 --- [user-service] [http-nio-8082-exec-10] c.d.user_service.services.UserService    : user validation failed
+2025-10-30T23:12:21.441+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-2] c.d.user_service.services.UserService    : validating user with 3
+2025-10-30T23:12:21.446+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-2] c.d.user_service.services.UserService    : user validation successful
+2025-10-30T23:12:21.460+05:30  INFO 20240 --- [product-service] [http-nio-8081-exec-3] c.d.p.service.ProductService             : product validation request received for 100 from cart service
+2025-10-30T23:12:21.475+05:30 ERROR 20240 --- [product-service] [http-nio-8081-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Product not found with id: 100] with root cause
+
+java.lang.RuntimeException: Product not found with id: 100
+	at com.docp.product_service.service.ProductService.lambda$getProductById$0(ProductService.java:38) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.docp.product_service.service.ProductService.getProductById(ProductService.java:38) ~[classes/:na]
+	at com.docp.product_service.controller.ProductController.getProductById(ProductController.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-10-30T23:46:52.126+05:30  INFO 20240 --- [product-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-30T23:46:52.224+05:30  INFO 20240 --- [product-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-30T23:46:52.274+05:30  INFO 20240 --- [product-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-30T23:46:52.329+05:30  INFO 20240 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-30T23:46:52.358+05:30  INFO 20240 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-30T23:46:57.593+05:30  INFO 3068 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Starting ProductServiceApplication using Java 21.0.8 with PID 3068 (D:\OneDrive\Desktop\EcommProject\ecomm-micro\product-service\target\classes started by divya in D:\OneDrive\Desktop\EcommProject\ecomm-micro)
+2025-10-30T23:46:57.598+05:30  INFO 3068 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-30T23:46:57.727+05:30  INFO 3068 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-30T23:46:57.727+05:30  INFO 3068 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-30T23:46:58.914+05:30  INFO 3068 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-30T23:46:59.009+05:30  INFO 3068 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interface.
+2025-10-30T23:46:59.828+05:30  INFO 3068 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-30T23:46:59.851+05:30  INFO 3068 --- [product-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-30T23:46:59.852+05:30  INFO 3068 --- [product-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-30T23:46:59.940+05:30  INFO 3068 --- [product-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-30T23:46:59.941+05:30  INFO 3068 --- [product-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2212 ms
+2025-10-30T23:47:00.272+05:30  INFO 3068 --- [product-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-30T23:47:00.421+05:30  INFO 3068 --- [product-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-30T23:47:00.496+05:30  INFO 3068 --- [product-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-30T23:47:01.196+05:30  INFO 3068 --- [product-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-30T23:47:01.267+05:30  INFO 3068 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-30T23:47:01.612+05:30  INFO 3068 --- [product-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@260cf57f
+2025-10-30T23:47:01.614+05:30  INFO 3068 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-30T23:47:01.698+05:30  WARN 3068 --- [product-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-30T23:47:01.732+05:30  INFO 3068 --- [product-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-30T23:47:03.499+05:30  INFO 3068 --- [product-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-30T23:47:03.653+05:30  INFO 3068 --- [product-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-30T23:47:04.454+05:30  WARN 3068 --- [product-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-30T23:47:05.224+05:30  WARN 3068 --- [product-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-10-30T23:47:05.291+05:30  INFO 3068 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-10-30T23:47:05.305+05:30  INFO 3068 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Started ProductServiceApplication in 8.78 seconds (process running for 10.504)
+2025-10-30T23:49:26.112+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-4] c.d.user_service.services.UserService    : validating user with 3
+2025-10-30T23:49:26.303+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-4] c.d.user_service.services.UserService    : user validation successful
+2025-10-30T23:49:26.615+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-30T23:49:26.616+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-30T23:49:26.619+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-30T23:49:26.801+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-1] c.d.p.service.ProductService             : product validation request received for 100 from cart service
+2025-10-30T23:49:27.130+05:30 ERROR 3068 --- [product-service] [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: Product not found with id: 100] with root cause
+
+java.lang.RuntimeException: Product not found with id: 100
+	at com.docp.product_service.service.ProductService.lambda$getProductById$0(ProductService.java:38) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.docp.product_service.service.ProductService.getProductById(ProductService.java:38) ~[classes/:na]
+	at com.docp.product_service.controller.ProductController.getProductById(ProductController.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.11.jar:6.2.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.46.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.11.jar:6.2.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.46.jar:10.1.46]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-10-30T23:49:43.091+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-5] c.d.user_service.services.UserService    : validating user with 1
+2025-10-30T23:49:43.096+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-5] c.d.user_service.services.UserService    : user validation successful
+2025-10-30T23:49:43.110+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-2] c.d.p.service.ProductService             : product validation request received for 10 from cart service
+2025-10-30T23:49:50.594+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-6] c.d.user_service.services.UserService    : validating user with 1
+2025-10-30T23:49:50.598+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-6] c.d.user_service.services.UserService    : user validation successful
+2025-10-30T23:49:50.605+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-3] c.d.p.service.ProductService             : product validation request received for 11 from cart service
+2025-10-30T23:49:57.398+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-7] c.d.user_service.services.UserService    : validating user with 3
+2025-10-30T23:49:57.402+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-7] c.d.user_service.services.UserService    : user validation successful
+2025-10-30T23:49:57.423+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-4] c.d.p.service.ProductService             : product validation request received for 11 from cart service
+2025-10-30T23:51:27.097+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-9] c.d.user_service.services.UserService    : validating user with 3
+2025-10-30T23:51:27.106+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-9] c.d.user_service.services.UserService    : user validation successful
+2025-10-30T23:51:27.126+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-6] c.d.p.service.ProductService             : product validation request received for 12 from cart service
+2025-10-30T23:53:40.012+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-1] c.d.user_service.services.UserService    : validating user with 3
+2025-10-30T23:53:40.051+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-1] c.d.user_service.services.UserService    : user validation successful
+2025-10-30T23:53:40.192+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-8] c.d.p.service.ProductService             : product validation request received for 12 from cart service
+2025-10-30T23:55:46.657+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-3] c.d.user_service.services.UserService    : validating user with 3
+2025-10-30T23:55:46.676+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-3] c.d.user_service.services.UserService    : user validation successful
+2025-10-30T23:55:46.780+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-10] c.d.p.service.ProductService             : product validation request received for 12 from cart service
+2025-10-30T23:57:41.784+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-5] c.d.user_service.services.UserService    : validating user with 3
+2025-10-30T23:57:41.813+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-5] c.d.user_service.services.UserService    : user validation successful
+2025-10-30T23:57:41.909+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-2] c.d.p.service.ProductService             : product validation request received for 12 from cart service
+2025-10-30T23:59:40.336+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-7] c.d.user_service.services.UserService    : validating user with 3
+2025-10-30T23:59:40.340+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-7] c.d.user_service.services.UserService    : user validation successful
+2025-10-30T23:59:40.428+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-4] c.d.p.service.ProductService             : product validation request received for 12 from cart service
+2025-10-31T00:01:19.397+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-9] c.d.user_service.services.UserService    : validating user with 3
+2025-10-31T00:01:19.928+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-9] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T00:01:20.088+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-6] c.d.p.service.ProductService             : product validation request received for 12 from cart service
+2025-10-31T00:03:32.392+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-1] c.d.user_service.services.UserService    : validating user with 3
+2025-10-31T00:03:32.472+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-1] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T00:03:32.759+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-8] c.d.p.service.ProductService             : product validation request received for 12 from cart service
+2025-10-31T00:09:05.705+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-3] c.d.user_service.services.UserService    : validating user with 3
+2025-10-31T00:09:05.805+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-3] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T00:09:06.075+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-10] c.d.p.service.ProductService             : product validation request received for 12 from cart service
+2025-10-31T00:09:50.639+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-5] c.d.user_service.services.UserService    : validating user with 3
+2025-10-31T00:09:50.661+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-5] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T00:09:50.751+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-2] c.d.p.service.ProductService             : product validation request received for 12 from cart service
+2025-10-31T00:09:54.696+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-6] c.d.user_service.services.UserService    : validating user with 3
+2025-10-31T00:09:54.700+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-6] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T00:09:54.711+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-3] c.d.p.service.ProductService             : product validation request received for 12 from cart service
+2025-10-31T00:09:59.315+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-7] c.d.user_service.services.UserService    : validating user with 3
+2025-10-31T00:09:59.320+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-7] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T00:09:59.331+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-4] c.d.p.service.ProductService             : product validation request received for 12 from cart service
+2025-10-31T00:11:29.680+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-9] c.d.user_service.services.UserService    : validating user with 4
+2025-10-31T00:11:29.716+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-9] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T00:11:29.763+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-6] c.d.p.service.ProductService             : product validation request received for 12 from cart service
+2025-10-31T00:11:47.403+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-10] c.d.user_service.services.UserService    : validating user with 4
+2025-10-31T00:11:47.408+05:30  INFO 16616 --- [user-service] [http-nio-8082-exec-10] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T00:11:47.420+05:30  INFO 3068 --- [product-service] [http-nio-8081-exec-7] c.d.p.service.ProductService             : product validation request received for 12 from cart service
+2025-10-31T00:28:12.618+05:30  INFO 3068 --- [product-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-31T00:28:12.738+05:30  INFO 3068 --- [product-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-31T00:28:12.795+05:30  INFO 3068 --- [product-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T00:28:12.879+05:30  INFO 3068 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-31T00:28:12.902+05:30  INFO 3068 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-31T00:28:17.250+05:30  INFO 16376 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Starting ProductServiceApplication using Java 21.0.8 with PID 16376 (D:\OneDrive\Desktop\EcommProject\ecomm-micro\product-service\target\classes started by divya in D:\OneDrive\Desktop\EcommProject\ecomm-micro)
+2025-10-31T00:28:17.254+05:30  INFO 16376 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-31T00:28:17.350+05:30  INFO 16376 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-31T00:28:17.350+05:30  INFO 16376 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-31T00:28:18.508+05:30  INFO 16376 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-31T00:28:18.604+05:30  INFO 16376 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interface.
+2025-10-31T00:28:19.422+05:30  INFO 16376 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-31T00:28:19.447+05:30  INFO 16376 --- [product-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-31T00:28:19.448+05:30  INFO 16376 --- [product-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31T00:28:19.528+05:30  INFO 16376 --- [product-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-31T00:28:19.529+05:30  INFO 16376 --- [product-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2178 ms
+2025-10-31T00:28:19.809+05:30  INFO 16376 --- [product-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-31T00:28:19.931+05:30  INFO 16376 --- [product-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-31T00:28:20.004+05:30  INFO 16376 --- [product-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-31T00:28:20.600+05:30  INFO 16376 --- [product-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-31T00:28:20.656+05:30  INFO 16376 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-31T00:28:21.084+05:30  INFO 16376 --- [product-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4afeed7f
+2025-10-31T00:28:21.087+05:30  INFO 16376 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-31T00:28:21.159+05:30  WARN 16376 --- [product-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-31T00:28:21.191+05:30  INFO 16376 --- [product-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-31T00:28:22.922+05:30  INFO 16376 --- [product-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-31T00:28:23.042+05:30  INFO 16376 --- [product-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T00:28:23.723+05:30  WARN 16376 --- [product-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-31T00:28:24.387+05:30  WARN 16376 --- [product-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-10-31T00:28:24.467+05:30  INFO 16376 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-10-31T00:28:24.482+05:30  INFO 16376 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Started ProductServiceApplication in 8.154 seconds (process running for 9.841)
+2025-10-31T00:28:27.578+05:30  INFO 16616 --- [user-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-31T00:28:27.702+05:30  INFO 16616 --- [user-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-31T00:28:27.844+05:30  INFO 16616 --- [user-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T00:28:28.047+05:30  INFO 16616 --- [user-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-31T00:28:28.100+05:30  INFO 16616 --- [user-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-31T00:28:33.503+05:30  INFO 20072 --- [user-service] [restartedMain] c.d.user_service.UserServiceApplication  : Starting UserServiceApplication using Java 21.0.8 with PID 20072 (D:\OneDrive\Desktop\EcommProject\ecomm-micro\user-service\target\classes started by divya in D:\OneDrive\Desktop\EcommProject\ecomm-micro)
+2025-10-31T00:28:33.507+05:30  INFO 20072 --- [user-service] [restartedMain] c.d.user_service.UserServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-10-31T00:28:33.571+05:30  INFO 20072 --- [user-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-31T00:28:33.572+05:30  INFO 20072 --- [user-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-31T00:28:34.598+05:30  INFO 20072 --- [user-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-31T00:28:34.682+05:30  INFO 20072 --- [user-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interface.
+2025-10-31T00:28:35.382+05:30  INFO 20072 --- [user-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-10-31T00:28:35.402+05:30  INFO 20072 --- [user-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-31T00:28:35.404+05:30  INFO 20072 --- [user-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31T00:28:35.477+05:30  INFO 20072 --- [user-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-31T00:28:35.477+05:30  INFO 20072 --- [user-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1905 ms
+2025-10-31T00:28:35.734+05:30  INFO 20072 --- [user-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-31T00:28:35.828+05:30  INFO 20072 --- [user-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-31T00:28:35.891+05:30  INFO 20072 --- [user-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-31T00:28:36.408+05:30  INFO 20072 --- [user-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-31T00:28:36.461+05:30  INFO 20072 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-31T00:28:36.762+05:30  INFO 20072 --- [user-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@740c8eea
+2025-10-31T00:28:36.766+05:30  INFO 20072 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-31T00:28:36.838+05:30  WARN 20072 --- [user-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-31T00:28:36.872+05:30  INFO 20072 --- [user-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-31T00:28:38.491+05:30  INFO 20072 --- [user-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-31T00:28:38.848+05:30  INFO 20072 --- [user-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T00:28:39.309+05:30  WARN 20072 --- [user-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-31T00:28:40.003+05:30  INFO 20072 --- [user-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-31T00:28:40.102+05:30  INFO 20072 --- [user-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-10-31T00:28:40.121+05:30  INFO 20072 --- [user-service] [restartedMain] c.d.user_service.UserServiceApplication  : Started UserServiceApplication in 7.451 seconds (process running for 9.609)
+2025-10-31T01:00:44.700+05:30  INFO 16376 --- [product-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-31T01:00:44.854+05:30  INFO 16376 --- [product-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-31T01:00:45.049+05:30  INFO 16376 --- [product-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T01:00:45.210+05:30  INFO 16376 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-31T01:00:45.326+05:30  INFO 16376 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-31T01:00:54.094+05:30  INFO 5248 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Starting ProductServiceApplication using Java 21.0.8 with PID 5248 (D:\OneDrive\Desktop\EcommProject\ecomm-micro\product-service\target\classes started by divya in D:\OneDrive\Desktop\EcommProject\ecomm-micro)
+2025-10-31T01:00:54.098+05:30  INFO 5248 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-31T01:00:54.224+05:30  INFO 5248 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-31T01:00:54.224+05:30  INFO 5248 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-31T01:00:56.285+05:30  INFO 5248 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-31T01:00:56.453+05:30  INFO 5248 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 146 ms. Found 1 JPA repository interface.
+2025-10-31T01:00:57.606+05:30  INFO 5248 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-31T01:00:57.630+05:30  INFO 5248 --- [product-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-31T01:00:57.633+05:30  INFO 5248 --- [product-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31T01:00:57.749+05:30  INFO 5248 --- [product-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-31T01:00:57.750+05:30  INFO 5248 --- [product-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3520 ms
+2025-10-31T01:00:58.084+05:30  INFO 5248 --- [product-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-31T01:00:58.245+05:30  INFO 5248 --- [product-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-31T01:00:58.338+05:30  INFO 5248 --- [product-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-31T01:00:58.982+05:30  INFO 5248 --- [product-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-31T01:00:59.045+05:30  INFO 5248 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-31T01:00:59.410+05:30  INFO 5248 --- [product-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@afd6ff0
+2025-10-31T01:00:59.410+05:30  INFO 5248 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-31T01:00:59.520+05:30  WARN 5248 --- [product-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-31T01:00:59.564+05:30  INFO 5248 --- [product-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-31T01:01:01.512+05:30  INFO 5248 --- [product-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-31T01:01:01.672+05:30  INFO 5248 --- [product-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T01:01:02.713+05:30  WARN 5248 --- [product-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-31T01:01:03.570+05:30  WARN 5248 --- [product-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-10-31T01:01:03.659+05:30  INFO 5248 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-10-31T01:01:03.681+05:30  INFO 5248 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Started ProductServiceApplication in 11.402 seconds (process running for 15.62)
+2025-10-31T01:14:23.719+05:30  INFO 5248 --- [product-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-31T01:14:23.871+05:30  INFO 5248 --- [product-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-31T01:14:23.902+05:30  INFO 20072 --- [user-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-31T01:14:23.979+05:30  INFO 5248 --- [product-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T01:14:24.069+05:30  INFO 20072 --- [user-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-31T01:14:24.119+05:30  INFO 5248 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-31T01:14:24.168+05:30  INFO 20072 --- [user-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T01:14:24.183+05:30  INFO 5248 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-31T01:14:24.322+05:30  INFO 20072 --- [user-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-31T01:14:24.380+05:30  INFO 20072 --- [user-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

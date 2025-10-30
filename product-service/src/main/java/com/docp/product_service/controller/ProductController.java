@@ -61,4 +61,4 @@ public class ProductController {
 }
 
 
-//http://localhost:8080/api/v1/products
+//http://localhost:8080/api/v1/product

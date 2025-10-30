@@ -33,7 +33,7 @@ public class ProductService {
 
 
     public ProductResponse getProductById(Long id) {
-        log.info("product validation request reveived for {} from cart service" , id);
+        log.info("product validation request received for {} from cart service" , id);
         Product product = productRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Product not found with id: " + id));
         return mapToProductResponse(product);
