@@ -36,19 +36,19 @@ public class CartService {
         );
     }
 
-//    public void clearCart(Long userId) {
+    //    public void clearCart(Long userId) {
 //        cartRepository.deleteByUserId(userId);
 //    }
-public boolean clearCart(Long userId) {
-    Optional<Cart> cartOptional = cartRepository.findByUserId(userId);
+    public boolean clearCart(Long userId) {
+        Optional<Cart> cartOptional = cartRepository.findByUserId(userId);
 
-    if (cartOptional.isPresent()) {
-        cartRepository.delete(cartOptional.get());
-        return true;
+        if (cartOptional.isPresent()) {
+            cartRepository.delete(cartOptional.get());
+            return true;
+        }
+
+        return false;
     }
-
-    return false;
-}
 
     //inter service communication
     public boolean addProductToCart(Long productId, Long userId) {
@@ -85,6 +85,30 @@ public boolean clearCart(Long userId) {
         cartRepository.save(newCart);
         log.info("New cart : {} ", newCart);
         return true;
+    }
+
+    public boolean removeProductFromCart(Long productId, Long userId) {
+        boolean userValidation = restClientProvider.validateUser(userId);
+        if (!userValidation) {
+            return false;
+        }
+        Optional<ProductDto> product = restClientProvider.getProductById(productId);
+        if (!product.isEmpty()) {
+            log.info("Product details  : {} ", product.get());
+            Cart usersCart = cartRepository.findCartByUserId(userId);
+            if (usersCart != null) {
+                usersCart.setProductQuantity(usersCart.getProductQuantity() - 1);
+                usersCart.setTotalAmount(usersCart.getTotalAmount().subtract(product.get().price()));
+                cartRepository.save(usersCart);
+                return true;
+            }
+
+
+        }
+
+        return false;
+
+
     }
 
 

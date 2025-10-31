@@ -54,5 +54,11 @@ public ResponseEntity<String> removeFromCart(@RequestParam Long userId) {
     }
 }
 
+@DeleteMapping("/delete-item")
+    public ResponseEntity<String> deleteCartItem(@RequestParam Long userId, @RequestParam Long productId) {
+        cartService.removeProductFromCart( productId, userId);
+        return new ResponseEntity<>("Deleted from cart", HttpStatus.OK);
+}
+
 
 }

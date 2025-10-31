@@ -860,3 +860,398 @@ java.lang.RuntimeException: Product not found with id: 100
 2025-10-31T12:12:09.239+05:30  INFO 10612 --- [product-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-10-31T12:12:09.346+05:30  INFO 10612 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2025-10-31T12:12:09.380+05:30  INFO 10612 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-31T12:12:13.447+05:30  INFO 9248 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Starting ProductServiceApplication using Java 21.0.8 with PID 9248 (D:\OneDrive\Desktop\EcommProject\ecomm-micro\product-service\target\classes started by divya in D:\OneDrive\Desktop\EcommProject\ecomm-micro)
+2025-10-31T12:12:13.450+05:30  INFO 9248 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-31T12:12:13.531+05:30  INFO 9248 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-31T12:12:13.532+05:30  INFO 9248 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-31T12:12:14.721+05:30  INFO 9248 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-31T12:12:14.821+05:30  INFO 9248 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interface.
+2025-10-31T12:12:15.696+05:30  INFO 9248 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-31T12:12:15.721+05:30  INFO 9248 --- [product-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-31T12:12:15.721+05:30  INFO 9248 --- [product-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31T12:12:15.807+05:30  INFO 9248 --- [product-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-31T12:12:15.808+05:30  INFO 9248 --- [product-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2275 ms
+2025-10-31T12:12:16.119+05:30  INFO 9248 --- [product-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-31T12:12:16.288+05:30  INFO 9248 --- [product-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-31T12:12:16.353+05:30  INFO 9248 --- [product-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-31T12:12:16.935+05:30  INFO 9248 --- [product-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-31T12:12:17.012+05:30  INFO 9248 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-31T12:12:17.426+05:30  INFO 9248 --- [product-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@669d0e1c
+2025-10-31T12:12:17.430+05:30  INFO 9248 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-31T12:12:17.506+05:30  WARN 9248 --- [product-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-31T12:12:17.542+05:30  INFO 9248 --- [product-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-31T12:12:19.329+05:30  INFO 9248 --- [product-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-31T12:12:19.446+05:30  INFO 9248 --- [product-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T12:12:20.110+05:30  WARN 9248 --- [product-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-31T12:12:20.736+05:30  INFO 9248 --- [product-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-31T12:12:20.807+05:30  INFO 9248 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-10-31T12:12:20.820+05:30  INFO 9248 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Started ProductServiceApplication in 8.28 seconds (process running for 9.665)
+2025-10-31T12:16:13.873+05:30  INFO 9248 --- [product-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-31T12:16:13.901+05:30  INFO 9248 --- [product-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-31T12:16:13.912+05:30  INFO 9248 --- [product-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T12:16:13.915+05:30  INFO 9248 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-31T12:16:13.923+05:30  INFO 9248 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-31T12:16:14.211+05:30  INFO 10756 --- [user-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-31T12:16:14.282+05:30  INFO 10756 --- [user-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-31T12:16:14.337+05:30  INFO 10756 --- [user-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T12:16:14.405+05:30  INFO 10756 --- [user-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-31T12:16:14.422+05:30  INFO 10756 --- [user-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-31T23:16:13.822+05:30  INFO 1776 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Starting ProductServiceApplication using Java 21.0.8 with PID 1776 (D:\OneDrive\Desktop\EcommProject\ecomm-micro\product-service\target\classes started by divya in D:\OneDrive\Desktop\EcommProject\ecomm-micro)
+2025-10-31T23:16:13.826+05:30  INFO 1776 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-31T23:16:13.913+05:30  INFO 1776 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-31T23:16:13.913+05:30  INFO 1776 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-31T23:16:15.569+05:30  INFO 1776 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-31T23:16:15.739+05:30  INFO 1776 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149 ms. Found 1 JPA repository interface.
+2025-10-31T23:16:16.856+05:30  INFO 1776 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-31T23:16:16.888+05:30  INFO 1776 --- [product-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-31T23:16:16.889+05:30  INFO 1776 --- [product-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31T23:16:16.991+05:30  INFO 1776 --- [product-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-31T23:16:16.992+05:30  INFO 1776 --- [product-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3078 ms
+2025-10-31T23:16:17.349+05:30  INFO 1776 --- [product-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-31T23:16:17.501+05:30  INFO 1776 --- [product-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-31T23:16:17.585+05:30  INFO 1776 --- [product-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-31T23:16:17.922+05:30  INFO 21176 --- [user-service] [restartedMain] c.d.user_service.UserServiceApplication  : Starting UserServiceApplication using Java 21.0.8 with PID 21176 (D:\OneDrive\Desktop\EcommProject\ecomm-micro\user-service\target\classes started by divya in D:\OneDrive\Desktop\EcommProject\ecomm-micro)
+2025-10-31T23:16:17.926+05:30  INFO 21176 --- [user-service] [restartedMain] c.d.user_service.UserServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-10-31T23:16:18.024+05:30  INFO 21176 --- [user-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-31T23:16:18.025+05:30  INFO 21176 --- [user-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-31T23:16:18.327+05:30  INFO 1776 --- [product-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-31T23:16:18.400+05:30  INFO 1776 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-31T23:16:18.810+05:30  INFO 1776 --- [product-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@f89d2b0
+2025-10-31T23:16:18.813+05:30  INFO 1776 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-31T23:16:18.901+05:30  WARN 1776 --- [product-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-31T23:16:18.943+05:30  INFO 1776 --- [product-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-31T23:16:19.419+05:30  INFO 21176 --- [user-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-31T23:16:19.541+05:30  INFO 21176 --- [user-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 1 JPA repository interface.
+2025-10-31T23:16:20.471+05:30  INFO 21176 --- [user-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-10-31T23:16:20.497+05:30  INFO 21176 --- [user-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-31T23:16:20.497+05:30  INFO 21176 --- [user-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31T23:16:20.589+05:30  INFO 21176 --- [user-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-31T23:16:20.589+05:30  INFO 21176 --- [user-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2563 ms
+2025-10-31T23:16:20.900+05:30  INFO 1776 --- [product-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-31T23:16:20.908+05:30  INFO 21176 --- [user-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-31T23:16:21.005+05:30  INFO 21176 --- [user-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-31T23:16:21.048+05:30  INFO 1776 --- [product-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T23:16:21.070+05:30  INFO 21176 --- [user-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-31T23:16:21.682+05:30  INFO 21176 --- [user-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-31T23:16:21.747+05:30  INFO 21176 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-31T23:16:21.796+05:30  WARN 1776 --- [product-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-31T23:16:22.100+05:30  INFO 21176 --- [user-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@573a1c96
+2025-10-31T23:16:22.103+05:30  INFO 21176 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-31T23:16:22.179+05:30  WARN 21176 --- [user-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-31T23:16:22.220+05:30  INFO 21176 --- [user-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-31T23:16:22.610+05:30  WARN 1776 --- [product-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-10-31T23:16:22.696+05:30  INFO 1776 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-10-31T23:16:22.712+05:30  INFO 1776 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Started ProductServiceApplication in 9.956 seconds (process running for 11.792)
+2025-10-31T23:16:24.120+05:30  INFO 21176 --- [user-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-31T23:16:24.475+05:30  INFO 21176 --- [user-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T23:16:24.885+05:30  WARN 21176 --- [user-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-31T23:16:25.499+05:30  WARN 21176 --- [user-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-10-31T23:16:25.566+05:30  INFO 21176 --- [user-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-10-31T23:16:25.581+05:30  INFO 21176 --- [user-service] [restartedMain] c.d.user_service.UserServiceApplication  : Started UserServiceApplication in 8.707 seconds (process running for 10.146)
+2025-10-31T23:17:10.605+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-31T23:17:10.606+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-31T23:17:10.608+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-31T23:17:10.816+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-1] c.d.user_service.services.UserService    : validating user with 5
+2025-10-31T23:17:11.882+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-1] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T23:17:12.209+05:30  INFO 1776 --- [product-service] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-31T23:17:12.211+05:30  INFO 1776 --- [product-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-31T23:17:12.213+05:30  INFO 1776 --- [product-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-10-31T23:17:12.312+05:30  INFO 1776 --- [product-service] [http-nio-8081-exec-1] c.d.p.service.ProductService             : product validation request received for 11 from cart service
+2025-10-31T23:17:20.251+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-3] c.d.user_service.services.UserService    : validating user with 3
+2025-10-31T23:17:20.256+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-3] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T23:17:20.267+05:30  INFO 1776 --- [product-service] [http-nio-8081-exec-2] c.d.p.service.ProductService             : product validation request received for 11 from cart service
+2025-10-31T23:17:25.747+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-2] c.d.user_service.services.UserService    : validating user with 4
+2025-10-31T23:17:25.752+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-2] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T23:17:25.760+05:30  INFO 1776 --- [product-service] [http-nio-8081-exec-3] c.d.p.service.ProductService             : product validation request received for 11 from cart service
+2025-10-31T23:17:28.151+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-4] c.d.user_service.services.UserService    : validating user with 4
+2025-10-31T23:17:28.156+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-4] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T23:17:28.164+05:30  INFO 1776 --- [product-service] [http-nio-8081-exec-4] c.d.p.service.ProductService             : product validation request received for 11 from cart service
+2025-10-31T23:17:33.620+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-5] c.d.user_service.services.UserService    : validating user with 5
+2025-10-31T23:17:33.624+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-5] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T23:17:33.632+05:30  INFO 1776 --- [product-service] [http-nio-8081-exec-5] c.d.p.service.ProductService             : product validation request received for 11 from cart service
+2025-10-31T23:17:35.491+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-6] c.d.user_service.services.UserService    : validating user with 5
+2025-10-31T23:17:35.498+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-6] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T23:17:35.507+05:30  INFO 1776 --- [product-service] [http-nio-8081-exec-6] c.d.p.service.ProductService             : product validation request received for 11 from cart service
+2025-10-31T23:17:37.075+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-7] c.d.user_service.services.UserService    : validating user with 5
+2025-10-31T23:17:37.079+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-7] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T23:17:37.089+05:30  INFO 1776 --- [product-service] [http-nio-8081-exec-7] c.d.p.service.ProductService             : product validation request received for 11 from cart service
+2025-10-31T23:17:44.473+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-8] c.d.user_service.services.UserService    : validating user with 5
+2025-10-31T23:17:44.479+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-8] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T23:17:44.486+05:30  INFO 1776 --- [product-service] [http-nio-8081-exec-8] c.d.p.service.ProductService             : product validation request received for 12 from cart service
+2025-10-31T23:17:50.012+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-9] c.d.user_service.services.UserService    : validating user with 5
+2025-10-31T23:17:50.015+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-9] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T23:17:50.024+05:30  INFO 1776 --- [product-service] [http-nio-8081-exec-9] c.d.p.service.ProductService             : product validation request received for 10 from cart service
+2025-10-31T23:17:56.448+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-10] c.d.user_service.services.UserService    : validating user with 5
+2025-10-31T23:17:56.452+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-10] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T23:17:56.464+05:30  INFO 1776 --- [product-service] [http-nio-8081-exec-10] c.d.p.service.ProductService             : product validation request received for 10 from cart service
+2025-10-31T23:19:26.063+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-3] c.d.user_service.services.UserService    : validating user with 5
+2025-10-31T23:19:26.071+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-3] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T23:19:26.099+05:30  INFO 1776 --- [product-service] [http-nio-8081-exec-2] c.d.p.service.ProductService             : product validation request received for 11 from cart service
+2025-10-31T23:19:33.162+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-2] c.d.user_service.services.UserService    : validating user with 5
+2025-10-31T23:19:33.165+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-2] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T23:19:33.174+05:30  INFO 1776 --- [product-service] [http-nio-8081-exec-3] c.d.p.service.ProductService             : product validation request received for 11 from cart service
+2025-10-31T23:26:49.995+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-5] c.d.user_service.services.UserService    : validating user with 5
+2025-10-31T23:26:50.169+05:30  INFO 21176 --- [user-service] [http-nio-8082-exec-5] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T23:26:50.474+05:30  INFO 1776 --- [product-service] [http-nio-8081-exec-5] c.d.p.service.ProductService             : product validation request received for 11 from cart service
+2025-10-31T23:30:19.526+05:30  INFO 18604 --- [user-service] [restartedMain] c.d.user_service.UserServiceApplication  : Starting UserServiceApplication using Java 21.0.8 with PID 18604 (D:\OneDrive\Desktop\EcommProject\ecomm-micro\user-service\target\classes started by divya in D:\OneDrive\Desktop\EcommProject\ecomm-micro)
+2025-10-31T23:30:19.531+05:30  INFO 18604 --- [user-service] [restartedMain] c.d.user_service.UserServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-10-31T23:30:19.612+05:30  INFO 18604 --- [user-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-31T23:30:19.613+05:30  INFO 18604 --- [user-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-31T23:30:20.786+05:30  INFO 18604 --- [user-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-31T23:30:20.879+05:30  INFO 18604 --- [user-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interface.
+2025-10-31T23:30:21.674+05:30  INFO 18604 --- [user-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-10-31T23:30:21.698+05:30  INFO 18604 --- [user-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-31T23:30:21.698+05:30  INFO 18604 --- [user-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31T23:30:21.787+05:30  INFO 18604 --- [user-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-31T23:30:21.787+05:30  INFO 18604 --- [user-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2173 ms
+2025-10-31T23:30:22.081+05:30  INFO 18604 --- [user-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-31T23:30:22.203+05:30  INFO 18604 --- [user-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-31T23:30:22.273+05:30  INFO 18604 --- [user-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-31T23:30:22.822+05:30  INFO 18604 --- [user-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-31T23:30:22.878+05:30  INFO 18604 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-31T23:30:23.184+05:30  INFO 18604 --- [user-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7c4baaff
+2025-10-31T23:30:23.187+05:30  INFO 18604 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-31T23:30:23.258+05:30  WARN 18604 --- [user-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-31T23:30:23.288+05:30  INFO 18604 --- [user-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-31T23:30:24.883+05:30  INFO 18604 --- [user-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-31T23:30:25.174+05:30  INFO 18604 --- [user-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T23:30:25.536+05:30  WARN 18604 --- [user-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-31T23:30:26.074+05:30  WARN 18604 --- [user-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-10-31T23:30:26.117+05:30  WARN 18604 --- [user-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-10-31T23:30:26.120+05:30  INFO 18604 --- [user-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T23:30:26.124+05:30  INFO 18604 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-31T23:30:26.128+05:30  INFO 18604 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-31T23:30:26.152+05:30  INFO 18604 --- [user-service] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-31T23:30:26.187+05:30 ERROR 18604 --- [user-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2025-10-31T23:32:27.154+05:30  INFO 7324 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Starting ProductServiceApplication using Java 21.0.8 with PID 7324 (D:\OneDrive\Desktop\EcommProject\ecomm-micro\product-service\target\classes started by divya in D:\OneDrive\Desktop\EcommProject\ecomm-micro)
+2025-10-31T23:32:27.160+05:30  INFO 7324 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-31T23:32:27.288+05:30  INFO 7324 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-31T23:32:27.288+05:30  INFO 7324 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-31T23:32:28.904+05:30  INFO 7324 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-31T23:32:29.032+05:30  INFO 7324 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 1 JPA repository interface.
+2025-10-31T23:32:30.190+05:30  INFO 7324 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-31T23:32:30.222+05:30  INFO 7324 --- [product-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-31T23:32:30.223+05:30  INFO 7324 --- [product-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31T23:32:30.333+05:30  INFO 7324 --- [product-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-31T23:32:30.334+05:30  INFO 7324 --- [product-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3045 ms
+2025-10-31T23:32:30.679+05:30  INFO 7324 --- [product-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-31T23:32:30.797+05:30  INFO 7324 --- [product-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-31T23:32:30.868+05:30  INFO 7324 --- [product-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-31T23:32:31.210+05:30  INFO 2356 --- [user-service] [restartedMain] c.d.user_service.UserServiceApplication  : Starting UserServiceApplication using Java 21.0.8 with PID 2356 (D:\OneDrive\Desktop\EcommProject\ecomm-micro\user-service\target\classes started by divya in D:\OneDrive\Desktop\EcommProject\ecomm-micro)
+2025-10-31T23:32:31.214+05:30  INFO 2356 --- [user-service] [restartedMain] c.d.user_service.UserServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-10-31T23:32:31.304+05:30  INFO 2356 --- [user-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-31T23:32:31.304+05:30  INFO 2356 --- [user-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-31T23:32:31.506+05:30  INFO 7324 --- [product-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-31T23:32:31.586+05:30  INFO 7324 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-31T23:32:31.931+05:30  INFO 7324 --- [product-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@50adbd9c
+2025-10-31T23:32:31.934+05:30  INFO 7324 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-31T23:32:32.001+05:30  WARN 7324 --- [product-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-31T23:32:32.031+05:30  INFO 7324 --- [product-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-31T23:32:32.492+05:30  INFO 2356 --- [user-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-31T23:32:32.598+05:30  INFO 2356 --- [user-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 1 JPA repository interface.
+2025-10-31T23:32:33.393+05:30  INFO 2356 --- [user-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-10-31T23:32:33.414+05:30  INFO 2356 --- [user-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-31T23:32:33.414+05:30  INFO 2356 --- [user-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31T23:32:33.497+05:30  INFO 2356 --- [user-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-31T23:32:33.498+05:30  INFO 2356 --- [user-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2192 ms
+2025-10-31T23:32:33.529+05:30  INFO 7324 --- [product-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-31T23:32:33.640+05:30  INFO 7324 --- [product-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T23:32:33.757+05:30  INFO 2356 --- [user-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-31T23:32:33.849+05:30  INFO 2356 --- [user-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-31T23:32:33.903+05:30  INFO 2356 --- [user-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-31T23:32:34.230+05:30  WARN 7324 --- [product-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-31T23:32:34.376+05:30  INFO 2356 --- [user-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-31T23:32:34.426+05:30  INFO 2356 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-31T23:32:34.690+05:30  INFO 2356 --- [user-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1fac099c
+2025-10-31T23:32:34.693+05:30  INFO 2356 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-31T23:32:34.753+05:30  WARN 2356 --- [user-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-31T23:32:34.756+05:30  WARN 7324 --- [product-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-10-31T23:32:34.784+05:30  INFO 2356 --- [user-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-31T23:32:34.794+05:30  WARN 7324 --- [product-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-10-31T23:32:34.797+05:30  INFO 7324 --- [product-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T23:32:34.802+05:30  INFO 7324 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-31T23:32:34.808+05:30  INFO 7324 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-31T23:32:34.832+05:30  INFO 7324 --- [product-service] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-31T23:32:34.871+05:30 ERROR 7324 --- [product-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2025-10-31T23:32:36.431+05:30  INFO 2356 --- [user-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-31T23:32:36.717+05:30  INFO 2356 --- [user-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T23:32:37.065+05:30  WARN 2356 --- [user-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-31T23:32:37.577+05:30  WARN 2356 --- [user-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-10-31T23:32:37.614+05:30  WARN 2356 --- [user-service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-10-31T23:32:37.618+05:30  INFO 2356 --- [user-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T23:32:37.622+05:30  INFO 2356 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-31T23:32:37.626+05:30  INFO 2356 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-31T23:32:37.646+05:30  INFO 2356 --- [user-service] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-31T23:32:37.678+05:30 ERROR 2356 --- [user-service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2025-10-31T23:32:49.306+05:30  INFO 1776 --- [product-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-31T23:32:49.327+05:30  INFO 21176 --- [user-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-31T23:32:49.366+05:30  INFO 1776 --- [product-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-31T23:32:49.395+05:30  INFO 21176 --- [user-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-31T23:32:49.419+05:30  INFO 1776 --- [product-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T23:32:49.454+05:30  INFO 21176 --- [user-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T23:32:49.482+05:30  INFO 1776 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-31T23:32:49.498+05:30  INFO 1776 --- [product-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-31T23:32:49.514+05:30  INFO 21176 --- [user-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-31T23:32:49.539+05:30  INFO 21176 --- [user-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-31T23:33:40.617+05:30  INFO 8456 --- [user-service] [restartedMain] c.d.user_service.UserServiceApplication  : Starting UserServiceApplication using Java 21.0.8 with PID 8456 (D:\OneDrive\Desktop\EcommProject\ecomm-micro\user-service\target\classes started by divya in D:\OneDrive\Desktop\EcommProject\ecomm-micro)
+2025-10-31T23:33:40.625+05:30  INFO 8456 --- [user-service] [restartedMain] c.d.user_service.UserServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-10-31T23:33:40.770+05:30  INFO 8456 --- [user-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-31T23:33:40.770+05:30  INFO 8456 --- [user-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-31T23:33:43.789+05:30  INFO 8456 --- [user-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-31T23:33:44.012+05:30  INFO 8456 --- [user-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 196 ms. Found 1 JPA repository interface.
+2025-10-31T23:33:45.558+05:30  INFO 8456 --- [user-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-10-31T23:33:45.594+05:30  INFO 8456 --- [user-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-31T23:33:45.596+05:30  INFO 8456 --- [user-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31T23:33:45.731+05:30  INFO 8456 --- [user-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-31T23:33:45.732+05:30  INFO 8456 --- [user-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4961 ms
+2025-10-31T23:33:46.277+05:30  INFO 8456 --- [user-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-31T23:33:46.503+05:30  INFO 8456 --- [user-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-31T23:33:46.634+05:30  INFO 8456 --- [user-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-31T23:33:47.642+05:30  INFO 8456 --- [user-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-31T23:33:47.752+05:30  INFO 8456 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-31T23:33:48.370+05:30  INFO 8456 --- [user-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@17571c16
+2025-10-31T23:33:48.375+05:30  INFO 8456 --- [user-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-31T23:33:48.501+05:30  WARN 8456 --- [user-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-31T23:33:48.564+05:30  INFO 8456 --- [user-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-31T23:33:51.492+05:30  INFO 8456 --- [user-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-31T23:33:51.950+05:30  INFO 8456 --- [user-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T23:33:52.336+05:30  INFO 20304 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Starting ProductServiceApplication using Java 21.0.8 with PID 20304 (D:\OneDrive\Desktop\EcommProject\ecomm-micro\product-service\target\classes started by divya in D:\OneDrive\Desktop\EcommProject\ecomm-micro)
+2025-10-31T23:33:52.341+05:30  INFO 20304 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-31T23:33:52.442+05:30  INFO 20304 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-31T23:33:52.443+05:30  INFO 20304 --- [product-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-31T23:33:52.561+05:30  WARN 8456 --- [user-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-31T23:33:53.467+05:30  INFO 8456 --- [user-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-31T23:33:53.545+05:30  INFO 8456 --- [user-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-10-31T23:33:53.568+05:30  INFO 8456 --- [user-service] [restartedMain] c.d.user_service.UserServiceApplication  : Started UserServiceApplication in 15.205 seconds (process running for 20.461)
+2025-10-31T23:33:53.852+05:30  INFO 20304 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-31T23:33:53.953+05:30  INFO 20304 --- [product-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interface.
+2025-10-31T23:33:55.004+05:30  INFO 20304 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-31T23:33:55.034+05:30  INFO 20304 --- [product-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-31T23:33:55.035+05:30  INFO 20304 --- [product-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-31T23:33:55.120+05:30  INFO 20304 --- [product-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-31T23:33:55.121+05:30  INFO 20304 --- [product-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2677 ms
+2025-10-31T23:33:55.444+05:30  INFO 20304 --- [product-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-31T23:33:55.538+05:30  INFO 20304 --- [product-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-31T23:33:55.598+05:30  INFO 20304 --- [product-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-31T23:33:56.079+05:30  INFO 20304 --- [product-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-31T23:33:56.130+05:30  INFO 20304 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-31T23:33:56.411+05:30  INFO 20304 --- [product-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1804186
+2025-10-31T23:33:56.420+05:30  INFO 20304 --- [product-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-31T23:33:56.511+05:30  WARN 20304 --- [product-service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-31T23:33:56.580+05:30  INFO 20304 --- [product-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-31T23:33:57.999+05:30  INFO 20304 --- [product-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-31T23:33:58.098+05:30  INFO 20304 --- [product-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-31T23:33:58.638+05:30  WARN 20304 --- [product-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-31T23:33:59.156+05:30  WARN 20304 --- [product-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-10-31T23:33:59.219+05:30  INFO 20304 --- [product-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-10-31T23:33:59.232+05:30  INFO 20304 --- [product-service] [restartedMain] c.d.p.ProductServiceApplication          : Started ProductServiceApplication in 8.044 seconds (process running for 9.908)
+2025-10-31T23:34:40.142+05:30  INFO 8456 --- [user-service] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-31T23:34:40.142+05:30  INFO 8456 --- [user-service] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-31T23:34:40.145+05:30  INFO 8456 --- [user-service] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-10-31T23:34:40.363+05:30  INFO 8456 --- [user-service] [http-nio-8082-exec-1] c.d.user_service.services.UserService    : validating user with 5
+2025-10-31T23:34:41.508+05:30  INFO 8456 --- [user-service] [http-nio-8082-exec-1] c.d.user_service.services.UserService    : user validation successful
+2025-10-31T23:34:42.089+05:30  INFO 20304 --- [product-service] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-31T23:34:42.090+05:30  INFO 20304 --- [product-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-31T23:34:42.093+05:30  INFO 20304 --- [product-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-10-31T23:34:42.185+05:30  INFO 20304 --- [product-service] [http-nio-8081-exec-1] c.d.p.service.ProductService             : product validation request received for 11 from cart service
