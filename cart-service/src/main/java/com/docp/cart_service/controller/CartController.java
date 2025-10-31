@@ -27,17 +27,32 @@ public class CartController {
         return new ResponseEntity<>("Added to cart ", HttpStatus.CREATED);
     }
 
-    @DeleteMapping
-    public ResponseEntity<String> removeFromCart(@RequestParam Long userId) {
-        try{
-            cartService.clearCart(userId);
-            return new ResponseEntity<>("Removed from cart ", HttpStatus.OK);
-        }
-        catch(Exception e){
-            return new ResponseEntity<>("Couldn't find the cart  ", HttpStatus.NOT_FOUND);
-        }
+//    @DeleteMapping
+//    public ResponseEntity<String> removeFromCart(@RequestParam Long userId) {
+//        try{
+//            cartService.clearCart(userId);
+//            return ResponseEntity.ok("Removed from cart ");
+//        }
+//        catch(Exception e){
+//            return new ResponseEntity<>("Couldn't find the cart  ", HttpStatus.NOT_FOUND);
+//        }
+//
+//    }
+@DeleteMapping
+public ResponseEntity<String> removeFromCart(@RequestParam Long userId) {
+    try {
+        boolean wasCleared = cartService.clearCart(userId);
 
+        if (wasCleared) {
+            return ResponseEntity.ok("Removed from cart");
+        } else {
+            return new ResponseEntity<>("Cart not found or already empty", HttpStatus.NOT_FOUND);
+        }
+    } catch (Exception e) {
+        return new ResponseEntity<>("Error clearing cart: " + e.getMessage(),
+                HttpStatus.INTERNAL_SERVER_ERROR);
     }
+}
 
 
 }

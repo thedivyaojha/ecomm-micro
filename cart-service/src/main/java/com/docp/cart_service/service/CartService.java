@@ -36,9 +36,19 @@ public class CartService {
         );
     }
 
-    public void clearCart(Long userId) {
-        cartRepository.deleteByUserId(userId);
+//    public void clearCart(Long userId) {
+//        cartRepository.deleteByUserId(userId);
+//    }
+public boolean clearCart(Long userId) {
+    Optional<Cart> cartOptional = cartRepository.findByUserId(userId);
+
+    if (cartOptional.isPresent()) {
+        cartRepository.delete(cartOptional.get());
+        return true;
     }
+
+    return false;
+}
 
     //inter service communication
     public boolean addProductToCart(Long productId, Long userId) {
