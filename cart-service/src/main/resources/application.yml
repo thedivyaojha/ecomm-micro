@@ -2,17 +2,5 @@ spring:
   application:
     name: cart-service
 
-  datasource:
-    url: jdbc:postgresql://localhost:5432/cartdb
-    username: postgres
-    password: divyaojha
-  jpa:
-    database: POSTGRESQL
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-
-
-server:
-  port: 8083
+  config:
+    import: optional:configserver:http://localhost:8888

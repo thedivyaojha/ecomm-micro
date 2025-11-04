@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: D:\OneDrive\Desktop\EcommProject\ecomm-micro\config-server\src\main\resources\configs
+
+
+
+server:
+  port: 8888
+

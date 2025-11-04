@@ -1255,3 +1255,5 @@ Identify and stop the process that's listening on port 8082 or configure this ap
 2025-10-31T23:34:42.090+05:30  INFO 20304 --- [product-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-10-31T23:34:42.093+05:30  INFO 20304 --- [product-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
 2025-10-31T23:34:42.185+05:30  INFO 20304 --- [product-service] [http-nio-8081-exec-1] c.d.p.service.ProductService             : product validation request received for 11 from cart service
+2025-11-01T00:02:46.351+05:30  WARN 20304 --- [product-service] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m19s597ms496µs800ns).
+2025-11-01T00:03:02.775+05:30  WARN 8456 --- [user-service] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m14s107ms683µs500ns).
