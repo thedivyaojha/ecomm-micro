@@ -9,6 +9,8 @@ import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/v1/cart")
 @Slf4j
@@ -16,10 +18,20 @@ public class CartController {
     @Autowired
     private CartService cartService;
 
+
+    //this is getting by cart id
     @GetMapping("/{id}")
     public ResponseEntity<CartResponse> getCartById(@PathVariable Long id) {
         return new ResponseEntity(cartService.findById(id), HttpStatus.OK);
     }
+
+    //getiing cart by user id- endpoint needed for order service
+    @GetMapping("/user/{userId}")
+    public ResponseEntity<List<CartResponse>> getCartItemsByUserId(@PathVariable Long userId) {
+        List<CartResponse> cartitems= cartService.getCartItemsByUserId(userId);
+        return ResponseEntity.ok(cartitems);
+    }
+
 
     @PostMapping
     public ResponseEntity<String> addProductToCart(@RequestParam Long productId, @RequestParam Long userId) {
@@ -27,17 +39,7 @@ public class CartController {
         return new ResponseEntity<>("Added to cart ", HttpStatus.CREATED);
     }
 
-//    @DeleteMapping
-//    public ResponseEntity<String> removeFromCart(@RequestParam Long userId) {
-//        try{
-//            cartService.clearCart(userId);
-//            return ResponseEntity.ok("Removed from cart ");
-//        }
-//        catch(Exception e){
-//            return new ResponseEntity<>("Couldn't find the cart  ", HttpStatus.NOT_FOUND);
-//        }
-//
-//    }
+
 @DeleteMapping
 public ResponseEntity<String> removeFromCart(@RequestParam Long userId) {
     try {
