@@ -12,6 +12,7 @@ import lombok.extern.slf4j.XSlf4j;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -43,10 +44,10 @@ public class CartService {
 //        cartRepository.deleteByUserId(userId);
 //    }
     public boolean clearCart(Long userId) {
-        Optional<Cart> cartOptional = cartRepository.findByUserId(userId);
+        List<Cart> cartItems = cartRepository.findByUserId(userId);  // Changed to List
 
-        if (cartOptional.isPresent()) {
-            cartRepository.delete(cartOptional.get());
+        if (!cartItems.isEmpty()) {
+            cartRepository.deleteAll(cartItems);  // Delete all items
             return true;
         }
 
@@ -111,25 +112,24 @@ public class CartService {
 
         return false;
 
-
     }
 
-    //by userid
-        public List<CartResponse> getCartItemsByUserId(Long userId) {
-            List<Cart> cartItems = cartRepository.findByUserId(userId);
 
-            if (cartItems.isEmpty()) {
-                throw new RuntimeException("Cart is empty for user: " + userId);
-            }
+    public List<CartResponse> getCartItemsByUserId(Long userId) {
+        List<Cart> cartItems = cartRepository.findByUserId(userId);  // List, not Optional
 
-            return cartItems.stream()
-                    .map(cart -> new CartResponse(
-                            cart.getUserId(),
-                            cart.getProductId(),
-                            cart.getProductQuantity(),
-                            cart.getTotalAmount()
-                    ))
-                    .collect(Collectors.toList());
+        if (cartItems.isEmpty()) {
+            throw new RuntimeException("Cart is empty for user: " + userId);
         }
+
+        return cartItems.stream()
+                .map(cart -> new CartResponse(
+                        cart.getUserId(),
+                        cart.getProductId(),
+                        cart.getProductQuantity(),
+                        cart.getTotalAmount()
+                ))
+                .collect(Collectors.toList());
     }
 
+}

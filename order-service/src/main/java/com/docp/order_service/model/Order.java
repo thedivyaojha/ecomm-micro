@@ -1,45 +1,34 @@
 package com.docp.order_service.model;
-
-
 import com.docp.order_service.enums.OrderStatus;
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@Entity
-@Table(name = "orders")
+@Document(collection = "orders")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Order {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long orderId;
+    private String id;  // MongoDB uses String ID
 
     private Long userId;
-
-    @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
     private OrderStatus status;
-
-    @Column(nullable = false)
     private BigDecimal totalAmount;
+    private List<OrderItem> orderItems;  // Embedded documents or array
 
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
-    private List<OrderItem> orderItems;
-
-    @CreationTimestamp
+    @CreatedDate
     private LocalDateTime createdAt;
-
-    @UpdateTimestamp
+    @LastModifiedDate
     private LocalDateTime updatedAt;
 
 

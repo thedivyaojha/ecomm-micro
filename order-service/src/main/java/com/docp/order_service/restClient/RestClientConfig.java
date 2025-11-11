@@ -8,15 +8,18 @@ import org.springframework.web.client.RestClient;
 
 @Configuration
 public class RestClientConfig {
+
     @Bean
     public RestClient.Builder restClientBuilder() {
         return RestClient.builder();
     }
 
     @Bean
-    @LoadBalanced   //Enables Eureka service discovery + load balancing
+    @LoadBalanced  // Enables Eureka service discovery
     @Qualifier("cartRestClient")
     public RestClient cartRestClientConfig(RestClient.Builder clientBuilder) {
-        return clientBuilder.baseUrl("http://localhost:8083").build();
+        return clientBuilder
+                .baseUrl("http://CART-SERVICE")  // Service name from Eureka, not localhost
+                .build();
     }
 }

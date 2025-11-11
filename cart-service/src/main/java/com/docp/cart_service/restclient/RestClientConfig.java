@@ -16,13 +16,13 @@ public class RestClientConfig {
     @Bean
     @Qualifier("productRestClient")
     public RestClient productRestClientConfig(RestClient.Builder clientBuilder) {
-        return clientBuilder.baseUrl("http://localhost:8081").build();
+        return clientBuilder.baseUrl("http://PRODUCT-SERVICE").build();
     }
 
     @Bean
     @Qualifier("userRestClient")
     public RestClient userRestClientConfig(RestClient.Builder clientBuilder) {
-        return clientBuilder.baseUrl("http://localhost:8082").build();
+        return clientBuilder.baseUrl("http://USER-SERVICE").build();
     }
 
 }
