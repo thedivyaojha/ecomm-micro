@@ -19,11 +19,11 @@ import java.util.List;
 public class Order {
 
     @Id
-    private String id;  // MongoDB uses String ID
+    private String id;  // MongoDB uses String ID, order id
 
     private Long userId;
     private OrderStatus status;
-    private BigDecimal totalAmount;
+    private BigDecimal totalAmount; //total order amt
     private List<OrderItem> orderItems;  // Embedded documents or array
 
     @CreatedDate

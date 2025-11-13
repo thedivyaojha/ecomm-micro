@@ -16,8 +16,8 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 public class OrderItem {
     private Long productId;
-    private Integer quantity;
-    private BigDecimal price;
+    private Integer quantity; // quantity of this product
+    private BigDecimal price; //price
 
 
 }
