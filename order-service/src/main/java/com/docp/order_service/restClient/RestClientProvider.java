@@ -25,7 +25,7 @@ public class RestClientProvider {
      */
     public List<CartResponse> getCartByUserId(Long userId){
         return cartRestClient.get()
-                .uri("api/v1/cart/user/{userId}", userId)
+                .uri("/api/v1/cart/user/{userId}", userId)
                 .retrieve()
                 .body(new ParameterizedTypeReference<>() {
                 });

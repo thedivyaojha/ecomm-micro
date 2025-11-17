@@ -19,7 +19,7 @@ public class RestClientConfig {
     @Qualifier("cartRestClient")
     public RestClient cartRestClientConfig(RestClient.Builder clientBuilder) {
         return clientBuilder
-                .baseUrl("http://CART-SERVICE")  // Service name from Eureka, not localhost
+                .baseUrl("http://localhost:8083")              //.baseUrl("http://CART-SERVICE")  // Service name from Eureka, not localhost
                 .build();
     }
 }
