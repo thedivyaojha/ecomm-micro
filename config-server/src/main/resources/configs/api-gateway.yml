@@ -1,26 +1,42 @@
+
+server:
+  port: 8080
+
 spring:
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
       routes:
+        # User Service
         - id: user-service
           uri: lb://USER-SERVICE
           predicates:
-            - Path=/api/v1/users/**
+            - Path=/api/v1/user/**
 
-  config:
-    enabled: true
+        # Product Service
+        - id: product-service
+          uri: lb://PRODUCT-SERVICE
+          predicates:
+            - Path=/api/v1/product/**
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    gateway:
-      enabled: true
+        # Cart Service
+        - id: cart-service
+          uri: lb://CART-SERVICE
+          predicates:
+            - Path=/api/v1/cart/**
 
+        # Order Service
+        - id: order-service
+          uri: lb://ORDER-SERVICE
+          predicates:
+            - Path=/api/v1/order/**
 
-server:
-  port: 8050
-
-
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true

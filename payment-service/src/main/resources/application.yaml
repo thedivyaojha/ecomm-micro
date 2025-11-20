@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: payment-service
+razorpay:
+  api:
+    key: rzp_test_Ri4qwbf5HkzPB5
+    secret: Vvbn3Cc4AU3K7j9K9rjbOA8q
