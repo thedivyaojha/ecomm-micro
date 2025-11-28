@@ -10,10 +10,12 @@ import com.docp.order_service.repository.OrderRepository;
 import com.docp.order_service.restClient.RestClientProvider;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cloud.stream.function.StreamBridge;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @Service
@@ -22,6 +24,7 @@ import java.util.stream.Collectors;
 public class OrderService {
     private final OrderRepository orderRepository;
     private final RestClientProvider restClientProvider;
+    private final StreamBridge streamBridge;
 
     /*
      * Creates order from user's cart.
@@ -74,6 +77,8 @@ public class OrderService {
         if(!cleared){
             log.warn("Failed to clear cart for user: {}", userId);
         }
+
+        streamBridge.send("createOrder-out-0" , Map.of("order-id", savedOrder.getId(), "status", "CREATED"));
         return mapToOrderResponse(savedOrder);
 
     }
