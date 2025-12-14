@@ -2,6 +2,20 @@ spring:
   application:
     name: notification-service
 
+  mail:
+    host: smtp.gmail.com
+    port: 465
+    username: divyaojha792@gmail.com
+    password: hevdptvoedhiaqez
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+            trust: smtp.gmail.com
+
+
   cloud:
     function:
       definition: orderCreated
@@ -18,3 +32,5 @@ spring:
           brokers: localhost:9092
 
 
+server:
+  port: 8088
